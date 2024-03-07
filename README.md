@@ -3,9 +3,6 @@
 ## Table of Contents
 - [What is RhinoUI](#what-is-rhinoui)
 - [Why RhinoUI](#why-rhinoui)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [RhinoUI Packages](#rhinoui-packages)
 - [How to Contribute](#how-to-contribute)
 - [How to Raise an Issue](#how-to-raise-an-issue)
 - [License](#license)
@@ -45,7 +42,7 @@ To get started RhinoUI, follow these steps:
    ```
 
 **Note:** 
-- `@rhino-ui/ts-config` is a workspace requirement in devDependencies, providing TypeScript configuration for RhinoUI projects.
+- `@rhino-ui/ts-config` is a workspace requirement in devDependencies, providing TypeScript configuration for Rhino UI projects.
 - The babel compiler for the `design-tokens` package builds esmodules, not commonjs.
 
 #### Example
@@ -57,7 +54,7 @@ import { Button } from '@rhino-ui/components';
 function App() {
   return (
     <div>
-      <h1>Welcome to RhinoUI</h1>
+      <h1>Welcome to Rhino UI</h1>
       <Button onClick={() => alert('Button clicked!')}>Click me</Button>
     </div>
   );
@@ -67,7 +64,7 @@ export default App;
 ```
 
 ###  RhinoUI Packages
-RhinoUI has two packages:
+Rhino UI has two packages:
 
 - [Components](https://github.com/rhinolabs/rhino-ui/tree/main/packages/components)
 - [Design Tokens](https://github.com/rhinolabs/rhino-ui/tree/main/packages/design-tokens)
@@ -93,7 +90,7 @@ Importing the global reset is recommended for maintaining a consistent look acro
 ```
 
 #### Design Tokens
-The Design Tokens package `@rhino-ui/design-tokens` provides a central location to store shared attributes of the RhinoUI Design System. These attributes include colors, fonts, spacing, and more. Using [Amazon's Style Dictionary](https://amzn.github.io/style-dictionary/), it transforms attributes into usable variables for a variety of platforms.
+The Design Tokens package `@rhino-ui/design-tokens` provides a central location to store shared attributes of the Rhino UI Design System. These attributes include colors, fonts, spacing, and more. Using [Amazon's Style Dictionary](https://amzn.github.io/style-dictionary/), it transforms attributes into usable variables for a variety of platforms.
 
 - Install
 ```bash
