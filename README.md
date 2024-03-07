@@ -1,45 +1,38 @@
 # Rhino UI
 
 ## Table of Contents
-- [Purpose](#purpose)
-- [Why Rhino UI](#why-rhino-ui)
+- [What is RhinoUI](#what-is-rhinoui)
+- [Why RhinoUI](#why-rhinoui)
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Rhino UI Packages](#rhino-ui-packages)
-- [Contributing](#contributing)
-- [Raising an Issue](#raising-an-issue)
+- [RhinoUI Packages](#rhinoui-packages)
+- [How to Contribute](#how-to-contribute)
+- [How to Raise an Issue](#how-to-raise-an-issue)
 - [License](#license)
 
-[Rhino UI](https://github.com/rhinolabs/rhino-ui) is an open-source set of Frontend libraries designed to simplify the integration of UI components into developers' workflows. This collection includes libraries, components, design tokens, and React hooks, providing a comprehensive toolkit for building modern user interfaces.
+### What is RhinoUI
+[RhinoUI](https://github.com/rhinolabs/rhino-ui) is an open-source set of Frontend libraries designed to simplify the integration of UI components into developers' workflows. This collection includes libraries, components, design tokens, and React hooks, providing a comprehensive toolkit for building modern user interfaces.
 
-### Purpose
-Rhino UI aims to streamline the integration of UI components, reducing development time and effort for frontend projects. It addresses the need for a modular, efficient, and developer-friendly solution for building user interfaces.
-
-### Why Rhino UI?
-Rhino UI solves the challenge of repetitive setup tasks and inconsistent configurations by providing ready-to-use ESLint, Prettier, and build tool configurations. It also simplifies component testing and documentation, enhancing the overall development experience.
+### Why RhinoUI?
+RhinoUI aims to streamline the integration of UI components, providing a modular, efficient, and developer-friendly solution for frontend projects. With ready-to-use configurations, RhinoUI eliminates repetitive setup tasks and ensures consistency across projects, without sacrificing simplicity.
 
 ### Features
 1. **Faster build times with Vite**
-Rhino UI utilizes Vite as the build tool for the React component library (`@rhino-ui/components`). Leveraging Vite's faster build time and improved developer experience, Rhino UI maintains consistency through its Storybook CS53 setup. This ensures efficient development, testing, and documentation of UI components.
+RhinoUI utilizes [Vite](https://vitejs.dev/) as the build tool for the React component library (`@rhino-ui/components`). Leveraging Vite's faster build time and improved developer experience ensures efficient development, testing, and documentation of UI components.
 
 2.  **Consistent code formatting and linting with ESLint and Prettier configurations**
-Setting up ESLint and Prettier for each project can be time-consuming. Rhino UI streamlines this process with its ESLint (`@rhino-ui/eslint-config`) and Prettier (`@rhino-ui/ts-config` for TypeScript projects) config modules. These configurations, located in the [libs](https://github.com/rhinolabs/rhino-ui/tree/main/libs) folder, are integrated into the [pnpm](https://github.com/rhinolabs/rhino-ui/blob/main/pnpm-workspace.yaml) workspace. This approach ensures consistency across projects, speeds up development, and maintains clean code.
+Setting up ESLint and Prettier for each project can be time-consuming. RhinoUI streamlines this process with its ESLint (`@rhino-ui/eslint-config`) and Prettier (`@rhino-ui/ts-config` for TypeScript projects) config modules. These configurations, located in the [libs](https://github.com/rhinolabs/rhino-ui/tree/main/libs) folder, are integrated into the [pnpm](https://github.com/rhinolabs/rhino-ui/blob/main/pnpm-workspace.yaml) workspace. This approach ensures consistency across projects, speeds up development, and maintains clean code.
 
-3. **Efficient component development, testing, and documentation with Storybook CS53 setup**
-Rhino UI uses Storybook CS53 setup, which is more efficient for developing, testing, and documenting UI components in isolation. This setup enhances collaboration and ensures the seamless integration of UI components into projects.
+ _However, it's important to note that these configurations are not available for public usage and are intended for RhinoUI development only._
 
-4. **Modular import pattern for optimized bundle size and performance**
-Rhino UI adopts a modular import pattern, allowing components to be imported directly from their subpaths or as an aggregate. This flexibility reduces bundle size, optimizes performance, and supports individual component exports. Examples include:
+3. **Modular import pattern for optimized bundle size and performance**
+RhinoUI adopts a modular import pattern, allowing components to be imported directly from their subpaths or as an aggregate. This flexibility reduces bundle size, optimizes performance, and supports individual component exports. Examples include:
    - Direct import: `import Alert from '@rhino-ui/components/alert'`
    - Aggregate import: `import { Alert } from '@rhino-ui/components'`
 
-5. **Live testing of UI components with Docusaurus**
-Rhino UI introduces the `docusaurus-live-codeblock` plugin, enabling live testing of UI components. This feature enhances the development experience by allowing developers to interactively test components within the documentation.
-
-
 ### Getting Started
 
-To get started Rhino UI, follow these steps:
+To get started RhinoUI, follow these steps:
 
 1. Install the required packages via npm:
    ```
@@ -54,9 +47,6 @@ To get started Rhino UI, follow these steps:
 **Note:** 
 - `@rhino-ui/ts-config` is a workspace requirement in devDependencies, providing TypeScript configuration for Rhino UI projects.
 - The babel compiler for the `design-tokens` package builds esmodules, not commonjs.
-
-#### Prerequisites
-- Node.js and npm installed
 
 #### Example
 
@@ -76,7 +66,7 @@ function App() {
 export default App;
 ```
 
-###  Rhino UI Packages
+###  RhinoUI Packages
 Rhino UI has two packages:
 
 - [Components](https://github.com/rhinolabs/rhino-ui/tree/main/packages/components)
@@ -100,19 +90,6 @@ yarn add @rhino-ui/components
 Importing the global reset is recommended for maintaining a consistent look across components:
 ```bash
 @import '@rhino-ui/components/dist/css/reset.css'; // A Basic CSS Reset -- OPTIONAL BUT ENCOURAGED
-```
-
-**Usage**
-```js
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Button } from '@rhino-ui/components';
-
-function App() {
-  return <Button>Hello World</Button>;
-}
-
-ReactDOM.render(<App />, document.querySelector('#app'));
 ```
 
 #### Design Tokens
@@ -154,10 +131,15 @@ yarn add @rhino-ui/design-tokens
 @import '~@rhino-ui/design-tokens/build/utilities/utilities-size.css';
 ```
 
-### Contributing
-Please see our [Contributing Guidelines]() for details on how to contribute to Rhino UI and participate in our community.
+### How to Contribute
+Contributions to RhinoUI are welcome!✅
 
-### Raising an Issue
+Rhino UI uses pnpm—a performant npm package manager and is integrated into its `pnpm workspace`. This optimizes package installation and dependency management. 
+To install `pnpm`, follow this [guide](https://pnpm.io/installation).
+
+Whether you're fixing a bug, or adding a new feature, please see our [Contributing Guidelines](https://github.com/rhinolabs/rhino-ui/blob/6b5f99bbf4a61c9f1b748722501890a60af1f604/CODE_OF_CONDUCT.md) for details on how to contribute to RhinoUI and participate in our community.
+
+### How to Raise an Issue
 When raising an issue:
 
 - Make sure the issue hasn't been raised yet.
