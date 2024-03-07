@@ -45,7 +45,7 @@ To get started RhinoUI, follow these steps:
    ```
 
 **Note:** 
-- `@rhino-ui/ts-config` is a workspace requirement in devDependencies, providing TypeScript configuration for Rhino UI projects.
+- `@rhino-ui/ts-config` is a workspace requirement in devDependencies, providing TypeScript configuration for RhinoUI projects.
 - The babel compiler for the `design-tokens` package builds esmodules, not commonjs.
 
 #### Example
@@ -57,7 +57,7 @@ import { Button } from '@rhino-ui/components';
 function App() {
   return (
     <div>
-      <h1>Welcome to Rhino UI</h1>
+      <h1>Welcome to RhinoUI</h1>
       <Button onClick={() => alert('Button clicked!')}>Click me</Button>
     </div>
   );
@@ -67,7 +67,7 @@ export default App;
 ```
 
 ###  RhinoUI Packages
-Rhino UI has two packages:
+RhinoUI has two packages:
 
 - [Components](https://github.com/rhinolabs/rhino-ui/tree/main/packages/components)
 - [Design Tokens](https://github.com/rhinolabs/rhino-ui/tree/main/packages/design-tokens)
@@ -93,7 +93,7 @@ Importing the global reset is recommended for maintaining a consistent look acro
 ```
 
 #### Design Tokens
-The Design Tokens package `@rhino-ui/design-tokens` provides a central location to store shared attributes of the Rhino UI Design System. These attributes include colors, fonts, spacing, and more. Using [Amazon's Style Dictionary](https://amzn.github.io/style-dictionary/), it transforms attributes into usable variables for a variety of platforms.
+The Design Tokens package `@rhino-ui/design-tokens` provides a central location to store shared attributes of the RhinoUI Design System. These attributes include colors, fonts, spacing, and more. Using [Amazon's Style Dictionary](https://amzn.github.io/style-dictionary/), it transforms attributes into usable variables for a variety of platforms.
 
 - Install
 ```bash
@@ -134,7 +134,7 @@ yarn add @rhino-ui/design-tokens
 ### How to Contribute
 Contributions to RhinoUI are welcome!✅
 
-Rhino UI uses pnpm—a performant npm package manager and is integrated into its `pnpm workspace`. This optimizes package installation and dependency management. 
+RhinoUI uses pnpm—a performant npm package manager and is integrated into its `pnpm workspace`. This optimizes package installation and dependency management. 
 To install `pnpm`, follow this [guide](https://pnpm.io/installation).
 
 Whether you're fixing a bug, or adding a new feature, please see our [Contributing Guidelines](https://github.com/rhinolabs/rhino-ui/blob/6b5f99bbf4a61c9f1b748722501890a60af1f604/CODE_OF_CONDUCT.md) for details on how to contribute to RhinoUI and participate in our community.
@@ -148,4 +148,4 @@ When raising an issue:
 - If your issue is a bug, include steps to reproduce, or link to reproducible issue, e.g.: Code Sandbox or similar. Please also provide any additional details including device, OS, browser, browser version etc.
 
 ### License
-Rhino UI is licensed under the [MIT License](https://github.com/rhinolabs/rhino-ui/blob/main/LICENSE)
+RhinoUI is licensed under the [MIT License](https://github.com/rhinolabs/rhino-ui/blob/main/LICENSE)
